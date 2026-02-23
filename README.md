@@ -1,107 +1,257 @@
-# :wave: The Basics of GitHub 
+# 🌐 HTML Exercises — Weeks 2, 3 & 4
 
-## 🤓 Course overview and learning outcomes 
+**Instructors:** Amra Abazi Feta & Lorik Limani
 
-The goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀
+> A hands-on, project-based HTML course where students build a **real personal portfolio website** from scratch — week by week, lesson by lesson.
 
-## :octocat: Git and GitHub
+---
 
-Git is a **distributed Version Control System (VCS)**, which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!
+## 🎯 Course Overview
 
-GitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.
+This module spans **3 weeks** of guided HTML exercises. By the end, you will have built a complete, semantic, accessible portfolio website using only HTML — exactly like professional developers do.
 
-GitHub is home to some of the most advanced technologies in the world. Whether you're visualizing data or building a new game, there's a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we'll dig into the rest later.
+| Week | Focus | Key Topics |
+|------|-------|------------|
+| [Week 2](#week-2--foundation) | Foundation | Document structure, text, lists, links, images |
+| [Week 3](#week-3--structure) | Structure | Tables, forms, semantic HTML, meta tags |
+| [Week 4](#week-4--advanced--final) | Advanced & Final | Multimedia, iframes, accessibility, best practices |
 
-## :octocat: Understanding the GitHub flow 
+---
 
-The GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.
+## 📁 Project Structure
 
-### Repositories
+Each week builds on the previous one. You will work on a single `index.html` file throughout the course, adding new features each week.
 
-A repository is where your project work happens--think of it as your project folder. It contains all of your project’s files and revision history.  You can work within a repository alone or invite others to collaborate with you on those files.
+```
+your-portfolio/
+├── index.html         ← Your main file (built over 3 weeks)
+└── images/
+    └── profile.jpg    ← Your profile photo
+```
 
-### Cloning 
+---
 
-When a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. 
-To learn more about cloning, read ["Cloning a Repository"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
+## Week 2 — Foundation
 
-### Committing and pushing
-**Committing** and **pushing** are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful **commit message** to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).
+> **Goal:** Create your first HTML page with structure, text, and formatted content.
 
-Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂
+### Lessons
 
-## 💻 GitHub terms to know 
+**Lesson 1 — What is HTML?**
+- HTML document structure: `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`
+- How tags work: opening, closing, and self-closing tags
+- The `<meta charset>`, `<title>`, and `<viewport>` tags
 
-### Repositories 
-We mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!
+**Lesson 2 — Text and Headings**
+- Heading levels `<h1>` through `<h6>` (use only **one** `<h1>` per page!)
+- Paragraph tags `<p>`
+- Inline formatting: `<strong>`, `<em>`, `<mark>`, `<del>`, `<small>`
+- Line breaks `<br>` and horizontal rules `<hr>`
 
-Repositories also contain **README**s. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 
-To learn more about repositories read ["Creating, Cloning, and Archiving Repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories) and ["About README's"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes). 
+**Lesson 3 — Lists**
+- Unordered lists `<ul>` with `<li>` items
+- Ordered lists `<ol>` with `<li>` items
+- Nested lists (lists inside lists)
 
-### Branches
-You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
-To learn more about branching, read ["About Branches"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).
+**Lesson 4 — Links and Images**
+- Anchor tags `<a href="">` with `target="_blank"` and `mailto:` links
+- Images `<img src="" alt="">` with width/height control
+- Making images into clickable links
 
-### Forks
-A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects!
-To learn more about forking, read ["Fork a repo"](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+### ✏️ Week 2 Exercises
 
-### Pull requests
-When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
-To learn more about pull requests, read ["About Pull Requests"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). 
+| # | Exercise | What You Build |
+|---|----------|----------------|
+| 1 | Create Your HTML File | A working `index.html` with the base structure |
+| 2 | Build Text Content | Your name, About Me section with formatted text |
+| 3 | Add Lists | Skills list (unordered) + Learning steps (ordered) |
+| 4 | Links & Images | Profile photo, 3+ links including email and external |
 
+### ✅ Week 2 Checklist
+- [ ] Page has exactly ONE `<h1>` tag
+- [ ] At least 3 `<h2>` sections
+- [ ] `<strong>` and `<em>` tags used
+- [ ] Both a `<ul>` and an `<ol>` present
+- [ ] At least one working link
+- [ ] An image with `alt` text
 
-### Issues
-Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!
+---
 
-For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them [in this "About Project boards document](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards). You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work!
-You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
-To learn more about issues and linking them to your pull requests, read ["About Issues"](https://docs.github.com/en/github/managing-your-work-on-github/about-issues). 
+## Week 3 — Structure
 
-### Your user profile
+> **Goal:** Add a projects table, a contact form, and restructure the page using semantic HTML5 tags.
 
-Your profile page tells people the story of your work through the repositories you're interested in, the contributions you've made, and the conversations you've had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! 
-To learn more about your user profile and adding and updating your profile README, read ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). 
+### Lessons
 
-### Using markdown on GitHub 
+**Lesson 1 — HTML Tables**
+- Table structure: `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`
+- Merging cells with `colspan` and `rowspan`
+- ⚠️ Use tables for **data** only — not for page layout
 
-You might have noticed already, but you can add some fun styling to your issues, pull requests, and files. ["Markdown"](https://guides.github.com/features/mastering-markdown/) is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point!
-To learn more about using GitHub’s flavor of markdown, read ["Basic Writing and Formatting Syntax"](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). 
+**Lesson 2 — HTML Forms**
+- The `<form>` element with `action` and `method` attributes
+- Input types: `text`, `email`, `password`, `number`, `date`, `checkbox`, `radio`, `submit`
+- Labels: always pair `<label for="">` with `<input id="">`
+- Textarea and dropdown `<select>` with `<option>` items
+- The `required` attribute for browser-side validation
 
-### Engaging with the GitHub community
+**Lesson 3 — Semantic HTML**
+- Semantic tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`
+- Anchor links using `id` attributes (`<a href="#about">`)
+- Full page restructure with semantic layout
 
-The GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start. 
+**Lesson 4 — HTML Entities & Meta Tags**
+- Common entities: `&copy;`, `&amp;`, `&lt;`, `&gt;`, `&nbsp;`, `&mdash;`
+- SEO meta tags: `description`, `keywords`, `author`
+- Updating the `<title>` with your name
 
-#### Starring repositories 
+### ✏️ Week 3 Exercises
 
-If you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. 
-To learn  more about starring repositories, read ["Saving Repositories with Stars"](https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars). 
+| # | Exercise | What You Build |
+|---|----------|----------------|
+| 1 | Projects Table | A 3-column table listing your projects |
+| 2 | Contact Form | Full form with labels, inputs, dropdown, and textarea |
+| 3 | Semantic Restructure | Wrap page in `<header>`, `<main>`, `<section>`, `<footer>` |
+| 4 | Head Section Polish | Meta tags, author, description, updated title |
 
-#### Following users 
+### ✅ Week 3 Checklist
+- [ ] Page has `<header>`, `<main>`, and `<footer>`
+- [ ] Each section has a unique `id`
+- [ ] Nav links jump to sections (anchor links work)
+- [ ] Projects table has `<thead>` and `<tbody>`
+- [ ] All form inputs have associated `<label>` tags
+- [ ] Footer uses `&copy;` symbol
+- [ ] Meta `description` tag is written
 
-You can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. 
-To learn more about following users, read ["Following People"](https://docs.github.com/en/github/getting-started-with-github/following-people).
+---
 
-#### Browsing GitHub Explore 
+## Week 4 — Advanced & Final
 
-GitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.
+> **Goal:** Add multimedia, iframes, and accessibility improvements. Complete your full portfolio in HTML.
 
-You can check out the GitHub Explore website [at github.com/explore](https://github.com/explore). The more you interact with GitHub the more tailored your Explore view will be. 
+### Lessons
 
-## 📝 Optional next steps 
+**Lesson 1 — Audio and Video**
+- `<video>` with `controls`, `autoplay`, `muted`, `loop`, `poster`
+- `<audio>` with `controls` and multiple `<source>` fallbacks
+- Always provide multiple formats (MP4 + WebM, MP3 + OGG)
 
-* Open a pull request and let your teacher know that you’ve finished this course.  
-* Create a new markdown file in this repository. Let them know what you learned and what you are still confused about! Experiment with different styles!
-* Create your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What's your favorite hobby? Learn more about creating your profile README in the document, ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme).
-* Go to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them. 
-* [Let us know what you liked or didn’t like about the content of this course](https://support.github.com/contact/education). What would you like to see more of? What would be interesting or helpful to your learning journey? 
+**Lesson 2 — Embedding with `<iframe>`**
+- Embedding YouTube videos (use `embed/VIDEO_ID` format)
+- Embedding Google Maps (Share → Embed a map)
+- Always add a descriptive `title` attribute to iframes
+- 🔒 Only embed content from trusted sources
 
-## 📚  Resources 
-* [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
-* [Git and GitHub learning resources](https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources) 
-* [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-* [How to use GitHub branches](https://www.youtube.com/watch?v=H5GJfcp3p4Q&feature=youtu.be)
-* [Interactive Git training materials](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class)
-* [GitHub's Learning Lab](https://lab.github.com/)
-* [Education community forum](https://education.github.community/)
-* [GitHub community forum](https://github.community/)
+**Lesson 3 — Accessibility (a11y)**
+- ARIA attributes: `aria-label`, `aria-hidden`, `role`, `aria-required`, `aria-expanded`
+- Keyboard navigation with `tabindex`
+- Skip navigation links (`<a href="#main">Skip to main content</a>`)
+- Color contrast requirements (WCAG 4.5:1 minimum)
+- `lang` attribute on `<html>` tag
+
+**Lesson 4 — Advanced HTML Elements**
+- `<details>` / `<summary>` for native accordions (no JavaScript!)
+- `<blockquote>` and `<cite>` for quotations
+- `<code>`, `<pre>`, `<kbd>` for displaying code and keyboard keys
+- `<figure>` and `<figcaption>` for semantic image captions
+- `<datalist>` for searchable input suggestions
+- `<progress>` and `<meter>` for skill bars
+
+**Lesson 5 — Best Practices & Validation**
+- HTML best practices (lowercase tags, close all tags, semantic structure)
+- W3C Markup Validator: [validator.w3.org](https://validator.w3.org)
+- Code commenting conventions
+
+### ✏️ Week 4 Exercises
+
+| # | Exercise | What You Build |
+|---|----------|----------------|
+| 1 | Media Section | Video or embedded YouTube + `<iframe>` |
+| 2 | YouTube & Maps | Embedded YouTube tutorial + Google Maps in Contact |
+| 3 | Accessibility Audit | ARIA labels, skip links, `lang`, keyboard nav |
+| 4 | Advanced Elements | `<figure>`, `<details>`, `<progress>`, `<blockquote>` |
+
+---
+
+## 🏆 Final Portfolio Challenge
+
+Your completed portfolio must include **all** of the following:
+
+| Section | Requirements |
+|---------|-------------|
+| **Structure** | Semantic `<header>`, `<nav>`, `<main>`, `<footer>` with anchor links |
+| **About** | `<h1>` name, profile photo in `<figure>`, bio with `<strong>` & `<em>`, `<blockquote>`, `<details>` |
+| **Skills** | Unordered list + `<progress>` bars for at least 3 skills |
+| **Projects** | Full table (`<thead>` + `<tbody>`) with 3+ projects and links |
+| **Media** | Embedded YouTube video with `title` attribute |
+| **Contact** | Form with labels, text, email, textarea, datalist/select, and submit button |
+| **Footer** | `&copy;` copyright, year, your name |
+| **Head** | `charset`, `viewport`, `description`, `author` meta tags + descriptive `<title>` |
+
+**Bonus:**
+- ✅ Validate at [validator.w3.org](https://validator.w3.org) with zero errors
+- ✅ Full keyboard navigation (Tab key only)
+- ✅ All images have meaningful `alt` text
+
+---
+
+## 🔧 Tools & Resources
+
+| Tool | Purpose |
+|------|---------|
+| [VS Code](https://code.visualstudio.com/) | Recommended code editor |
+| [validator.w3.org](https://validator.w3.org) | HTML validation |
+| [webaim.org/resources/contrastchecker](https://webaim.org/resources/contrastchecker/) | Color contrast checker |
+| **VS Code Extension:** HTML CSS Support | Autocomplete for HTML & CSS |
+| **VS Code Extension:** Auto Rename Tag | Auto-updates closing tags |
+
+---
+
+## 📚 Topics at a Glance
+
+<details>
+<summary><strong>Week 2 — Foundation</strong></summary>
+
+- HTML document structure, DOCTYPE, head, body  
+- Headings h1–h6, paragraphs, line breaks  
+- Text formatting: strong, em, mark, del, small  
+- Ordered and unordered lists, nested lists  
+- Links with anchor tags, href, target, mailto  
+- Images with img, src, alt, width, height  
+
+</details>
+
+<details>
+<summary><strong>Week 3 — Structure</strong></summary>
+
+- HTML Tables with thead, tbody, tr, th, td  
+- Cell merging with colspan and rowspan  
+- Forms: input types, labels, textarea, select  
+- Form validation with required attribute  
+- Semantic HTML5 tags: header, nav, main, section, article, aside, footer  
+- Anchor links and page navigation with id  
+- HTML Entities and Meta tags  
+
+</details>
+
+<details>
+<summary><strong>Week 4 — Advanced</strong></summary>
+
+- Video and audio elements with multiple sources  
+- Embedding content with iframes (YouTube, Google Maps)  
+- Accessibility: ARIA roles, aria-label, aria-hidden, keyboard nav  
+- Advanced elements: details, summary, figure, figcaption, progress, meter, datalist  
+- Code display: code, pre, kbd  
+- HTML best practices and W3C validation  
+
+</details>
+
+---
+
+## 🚀 What's Next?
+
+You now have the **structure**. Next step: **CSS** — make your portfolio beautiful!
+
+---
+
+*Built with ❤️ by students learning web development.*
